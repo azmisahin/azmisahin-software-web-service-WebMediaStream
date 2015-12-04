@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Stream</title>
+    <meta name="description" content="Web Audio Api" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Azmi ŞAHİN" />
+    <meta name="generator" content="bilgi@azmisahin.com" />
+    <script src="js/MediaStreamRecorder.js"></script>
+    <script src="js/adapter.js"></script>
+    <link href="css.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="btn-group">
+                <button id="start-recording" type="button" class="btn btn-default" aria-label="Record" title="Record">
+                    <span class="glyphicon glyphicon-record btn-danger" aria-hidden="true"></span>
+                </button>
+                <button id="stop-recording" disabled type="button" class="btn btn-default" aria-label="Stop" title="Stop">
+                    <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+                </button>
+                <button id="pause-recording" disabled type="button" class="btn btn-default" aria-label="Pause" title="Pause">
+                    <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span>
+                </button>
+                <button id="resume-recording" disabled type="button" class="btn btn-default" aria-label="Resume" title="Resume">
+                    <span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+                </button>
+                <input type="text" id="time-interval" value="5000">ms
+            </div><!--button group-->
+            <div id="container"></div>
+        </div>
+        <div class="col-xs-6">
+            <div id="records"></div>
+        </div>
+    </div><!--row-->
+    <script src="app.js"></script>
+
+</body>
+</html>
